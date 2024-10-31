@@ -52,6 +52,18 @@
 					Console.WriteLine("\nBRITISH POUNDS: " + pounds.ToString("0.00"));
 				}
 			}
+
+			else if (answer == "T")
+			{
+				Console.Clear();
+				Console.WriteLine("TEMPERATURE CONVERTER");
+				Console.WriteLine("-------------------\n");
+				Console.WriteLine("- [1] CELSIUS TO FAHRENHEIT\n");
+				Console.WriteLine("- [2] FAHRENHEIT TO CELSIUS\n");
+				Console.Write("ENTER OPTION: ");
+				string choice = Console.ReadLine();
+			}
+
 		}
 	}
 }
