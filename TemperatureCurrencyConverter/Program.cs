@@ -86,6 +86,16 @@
 					Console.WriteLine("\nCELSIUS: " + celsius);
 				}
 			}
+
+			else
+			{
+				Console.WriteLine("\nINVALID OPTION. TRY AGAIN");
+			}
+
+			Console.WriteLine();
+			Console.WriteLine("PRESS ANY KEY TO RETURN TO MAIN MENU...");
+			Console.ReadKey();
+
 		}
 	}
 }
