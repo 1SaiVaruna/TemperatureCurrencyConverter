@@ -62,8 +62,30 @@
 				Console.WriteLine("- [2] FAHRENHEIT TO CELSIUS\n");
 				Console.Write("ENTER OPTION: ");
 				string choice = Console.ReadLine();
-			}
 
+				if (choice == "1")
+				{
+					Console.Clear();
+					Console.WriteLine("TEMPERATURE CONVERTER - CELSIUS TO FAHRENHEIT");
+					Console.WriteLine("-------------------\n");
+					Console.Write("ENTER AMOUNT IN CELSIUS: ");
+					float celsius = float.Parse(Console.ReadLine());
+
+					float fahrenheit = celsius * 1.8f + 32f;
+					Console.WriteLine("\nFAHRENHEIT: " + fahrenheit);
+				}
+				else if (choice == "2")
+				{
+					Console.Clear();
+					Console.WriteLine("TEMPERATURE CONVERTER - FAHRENHEIT TO CELSIUS");
+					Console.WriteLine("-------------------\n");
+					Console.Write("ENTER AMOUNT IN FAHRENHEIT: ");
+					float fahrenheit = float.Parse(Console.ReadLine());
+
+					float celsius = (fahrenheit - 32f) / 1.8f;
+					Console.WriteLine("\nCELSIUS: " + celsius);
+				}
+			}
 		}
 	}
 }
