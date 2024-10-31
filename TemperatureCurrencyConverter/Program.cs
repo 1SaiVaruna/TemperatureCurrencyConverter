@@ -28,9 +28,31 @@
 				Console.WriteLine("- [2] EUROS TO POUNDS\n");
 				Console.Write("ENTER OPTION: ");
 				string choice = Console.ReadLine();
+
+				if (choice == "1")
+				{
+					Console.Clear();
+					Console.WriteLine("CURRENCY CONVERTER - POUNDS TO EUROS");
+					Console.WriteLine("-----------------------\n");
+					Console.Write("ENTER AMOUNT IN BRITISH POUNDS: ");
+					float pounds = float.Parse(Console.ReadLine());
+
+					float euros = pounds * 1.16f;
+					Console.WriteLine("\nEUROS: " + euros.ToString("0.00"));
+				}
+				else if (choice == "2")
+				{
+					Console.Clear();
+					Console.WriteLine("CURRENCY CONVERTER - EUROS TO POUNDS");
+					Console.WriteLine("-----------------------\n");
+					Console.Write("ENTER AMOUNT IN EUROS: ");
+					float euros = float.Parse(Console.ReadLine());
+
+					float pounds = euros / 1.16f;
+					Console.WriteLine("\nBRITISH POUNDS: " + pounds.ToString("0.00"));
+				}
 			}
 		}
-
 	}
 }
 
