@@ -18,6 +18,17 @@
 			{
 				break;
 			}
+
+			if (answer == "C")
+			{
+				Console.Clear();
+				Console.WriteLine("CURRENCY CONVERTER");
+				Console.WriteLine("-------------------\n");
+				Console.WriteLine("- [1] POUNDS TO EUROS\n");
+				Console.WriteLine("- [2] EUROS TO POUNDS\n");
+				Console.Write("ENTER OPTION: ");
+				string choice = Console.ReadLine();
+			}
 		}
 
 	}
